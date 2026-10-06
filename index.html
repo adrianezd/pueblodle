@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pueblodle — Adivina el municipio de España del día</title>
+<meta name="description" content="Juego diario gratis: adivina el municipio español por su silueta en 6 intentos, con pistas de distancia, dirección, provincia y comunidad. Un pueblo o ciudad nuevo cada día.">
+<link rel="canonical" href="https://adrianezd.github.io/pueblodle/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#b03a2e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pueblodle — El municipio del día">
+<meta property="og:description" content="Adivina el municipio español por su silueta. Uno nuevo cada día.">
+<meta property="og:url" content="https://adrianezd.github.io/pueblodle/">
+<meta property="og:locale" content="es_ES">
+<link rel="stylesheet" href="style.css">
+<!-- seo -->
+<meta name="keywords" content="pueblodle, worldle españa, adivina el pueblo, juego diario geografía, municipios españa">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="adrianezd">
+<meta property="og:site_name" content="Pueblodle">
+<meta property="og:image" content="https://adrianezd.github.io/pueblodle/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pueblodle">
+<meta name="twitter:description" content="Juego diario: adivina el municipio español por su silueta en 6 intentos, con pistas de distancia y dirección.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["WebApplication","Game"],"name":"Pueblodle","url":"https://adrianezd.github.io/pueblodle/","description":"Juego diario: adivina el municipio español por su silueta en 6 intentos, con pistas de distancia y dirección.","inLanguage":"es","applicationCategory":"GameApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"adrianezd"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cada cuánto cambia el municipio?","acceptedAnswer":{"@type":"Answer","text":"Hay uno nuevo cada día a medianoche, el mismo para todo el mundo."}},{"@type":"Question","name":"¿Qué municipios pueden salir?","acceptedAnswer":{"@type":"Answer","text":"Los 430 municipios de España con más de 20.000 habitantes."}},{"@type":"Question","name":"¿Qué pistas da cada intento?","acceptedAnswer":{"@type":"Answer","text":"La distancia y la dirección hasta el municipio correcto. Si fallas varias veces, también te dice la provincia."}}]}]}</script>
+<!-- /seo -->
+</head>
+<body>
+<header class="top">
+  <h1>📍 Pueblodle</h1>
+  <p class="sub">El municipio del día <span id="numero"></span></p>
+</header>
+<main>
+  <div class="silueta tarjeta"><svg id="silueta" viewBox="-4 -4 108 108" role="img" aria-label="Silueta del municipio"></svg></div>
+  <div class="pistas" id="pistas"></div>
+  <form id="form" class="buscador" autocomplete="off">
+    <input id="entrada" placeholder="Escribe un municipio" aria-label="Municipio">
+    <ul id="sugerencias" class="sugerencias" hidden></ul>
+    <button class="boton">Probar</button>
+  </form>
+  <ol class="intentos" id="intentos"></ol>
+  <section id="final" class="tarjeta final" hidden>
+    <h2 id="finalTit"></h2>
+    <p id="finalTxt"></p>
+    <button class="boton" id="compartir">Compartir</button>
+    <p class="sub" id="cuenta"></p>
+  </section>
+  <section class="texto">
+    <h2>Cómo se juega</h2>
+    <p>Cada día hay un municipio de España de más de 20.000 habitantes. Tienes 6 intentos para adivinarlo por su silueta. Tras cada fallo verás a cuántos kilómetros estás y en qué dirección queda. Al tercer fallo te decimos la provincia y al quinto la comunidad.</p>
+  </section>
+</main>
+<footer>Siluetas: Instituto Geográfico Nacional vía es-atlas · Población: Wikidata</footer>
+<!-- red -->
+<section class="seo-faq" style="max-width:760px;margin:0 auto;padding:8px 16px;font-size:.92rem;opacity:.85"><h2 style="font-size:1rem">Preguntas frecuentes</h2><details><summary>¿Cada cuánto cambia el municipio?</summary><p>Hay uno nuevo cada día a medianoche, el mismo para todo el mundo.</p></details><details><summary>¿Qué municipios pueden salir?</summary><p>Los 430 municipios de España con más de 20.000 habitantes.</p></details><details><summary>¿Qué pistas da cada intento?</summary><p>La distancia y la dirección hasta el municipio correcto. Si fallas varias veces, también te dice la provincia.</p></details></section>
+<nav class="seo-red" style="max-width:760px;margin:0 auto;padding:8px 16px 28px;font-size:.85rem;opacity:.75;text-align:center">Más webs gratis: <a href="https://adrianezd.github.io/precio-luz-hoy/">Precio de la luz</a> · <a href="https://adrianezd.github.io/sueldo-neto/">Sueldo neto</a> · <a href="https://adrianezd.github.io/la-previa/">La Previa</a> · <a href="https://adrianezd.github.io/brisca-maldita/">Brisca Maldita</a> · <a href="https://adrianezd.github.io/embalses-hoy/">Embalses hoy</a> · <a href="https://adrianezd.github.io/calendario-laboral/">Calendario laboral</a> · <a href="https://adrianezd.github.io/alquilar-o-comprar/">Alquilar o comprar</a> · <a href="https://adrianezd.github.io/coste-viaje/">Coste del viaje</a> · <a href="https://adrianezd.github.io/pueblodle/">Pueblodle</a> · <a href="https://adrianezd.github.io/grid-laliga/">Grid LaLiga</a> · <a href="https://adrianezd.github.io/quien-lo-dijo/">Quién lo dijo</a> · <a href="https://adrianezd.github.io/el-mentiroso/">El Mentiroso</a></nav>
+<!-- /red -->
+<script src="municipios.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

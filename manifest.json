@@ -1,0 +1,19 @@
+{
+  "name": "Pueblodle",
+  "short_name": "Pueblodle",
+  "description": "Adivina cada día el municipio español por su silueta en 6 intentos, con pistas de distancia y dirección.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#b03a2e",
+  "theme_color": "#b03a2e",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
